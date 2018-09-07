@@ -5,6 +5,6 @@ import java.io.Serializable;
 import javax.persistence.Entity;
 
 @Entity(name = "ITEM")
-public class Item implements Serializable {
+public class ItemDTO implements Serializable {
 
 }
