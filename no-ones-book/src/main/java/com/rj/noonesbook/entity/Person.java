@@ -9,9 +9,9 @@ public class Person {
 	int personId;
 	@Column(name = "name")
 	String name;
-	@OneToMany(mappedBy = "person")
+	@OneToOne(mappedBy = "person")
 	ItemDTO itemDTO;
-	@OneToMany
+	@OneToOne
 	@JoinColumn(name = "address")
 	Address address;
 

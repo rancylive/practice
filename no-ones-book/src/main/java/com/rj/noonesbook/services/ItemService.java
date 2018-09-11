@@ -19,4 +19,11 @@ public class ItemService {
 		itemDao.save(itemDTO);
 		return item;
 	}
+	
+	public Item fetch(int itemId) {
+		Item item = new Item(); //Use objectMapper
+		ItemDTO dto = itemDao.fetch(itemId);
+		item.setName(dto.getName());
+		return item;
+	}
 }
